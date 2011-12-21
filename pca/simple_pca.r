@@ -20,9 +20,9 @@ data_table = args[1]
 plot_name  = "myplot.pdf"
 
 # Get environmental variables if provided
-length_factor = as.integer(Sys.getenv('lf'), 10) # loadings length scale factor
+length_factor = as.integer(Sys.getenv('lf'), 10)    # loadings length scale factor
 text_scale    = as.integer(Sys.getenv('tf'), 10)    # text scale factor
-lim           = as.integer(Sys.getenv('lim'), 10)          # x/y limit
+lim           = as.integer(Sys.getenv('lim'), 10)   # x/y limit
 
 # Read data
 mydata = read.table(
