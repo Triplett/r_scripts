@@ -66,7 +66,6 @@ pvalue_notpairwise <- function(data, nob, fdrcutoff, output.file) {
       for (j in 2: m) {
           B[i, 1] <- sum(A[i, 1: nob[1]])
           B[i, j] <- sum(A[i, nob[j - 1] + 1: nob[j]])
-          print(B)
           tot[, 1] <- sum(B[, 1])
           tot[, j] <- sum(B[, j])
       }
