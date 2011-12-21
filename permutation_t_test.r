@@ -5,6 +5,10 @@
 # Original written by George Casella
 # Modified by Austin G. Davis-Richardson
 
+# USAGE:
+# ./permutation_t_test.r input.csv
+# you must edit pop_b_index, samples and bootstraps manually.
+
 args <- commandArgs(TRUE)
 input = args[1]
 
