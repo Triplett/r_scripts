@@ -1,3 +1,7 @@
+# Christopher Brown
+
+# No one remembers how this script works but it made awesome PCAs (IN 3D!!!!)
+
 #from input
 counts = commandArgs(trailingOnly=TRUE)[1]
 num_reads = commandArgs(trailingOnly=TRUE)[2]
