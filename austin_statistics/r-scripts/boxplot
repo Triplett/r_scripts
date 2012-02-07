@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [[ $1 ]]
+then
+  r --slave $1 <<EOF
+filename <- commandArgs(trailingOnly=FALSE)[3]
+data <- read.csv(filename, header=T, row.names=1, sep="\t")
+boxplot(data)
+EOF
+  open Rplots.pdf
+else
+  echo "usage: boxplot file.csv"
+fi
